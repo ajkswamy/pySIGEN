@@ -105,3 +105,6 @@ ENV/
 # idea
 .idea
 
+# temporarily generated test files
+tests/testFiles/temp1
+tests/testFiles/testOutput*

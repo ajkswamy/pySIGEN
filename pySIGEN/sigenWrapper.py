@@ -1,10 +1,11 @@
 import subprocess
 from .executables import sigenMorphExtractor, sigenSmoothing
 import logging
-from .auxFuncs import log_subprocess_output, tifStack2ImageSeq
+from .auxFuncs import log_subprocess_output
 
 
-def runSIGEN(inDir: str, outFile: str, VT: int, DT: int, C: int, S: int):
+def runSIGEN(inDir: str, outFile: str, VT: int, DT: int, C: int, S: int,
+             XY_scale: float, Z_scale: float, threshold: int):
 
     toRun = [
               "mono", sigenMorphExtractor,
@@ -14,7 +15,10 @@ def runSIGEN(inDir: str, outFile: str, VT: int, DT: int, C: int, S: int):
               "-v", str(VT),
               "-d", str(DT),
               "-a", str(C),
-              "-s", str(S)
+              "-s", str(S),
+              "-x", str(XY_scale),
+              "-z", str(Z_scale),
+              "-b", str(threshold)
             ]
 
     logging.info("[runSIGEN] Running {}".format(toRun))
