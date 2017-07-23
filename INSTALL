@@ -1,20 +1,24 @@
-With Conda (Linux or Windows):
+With Conda (Linux, Windows or Mac):
 
-1. Create a new environment: conda create --name pySIGEN python=3.6 numpy pillow
-2. Activate environment: source activate pySIGEN (Linux) or activate pySIGEN (Windows)
-3. Install pySIGEN: pip install <path to pySIGEN repository>
-4. Install SIGEN and its dependencies from https://sites.google.com/site/sigenproject/downloads.
-5. Modify the variables sigenMorphExtractor and sigenSmoothing to point to
-"MorphExtractorCL.exe" and "swcsmoothing.exe" respectively
+1. Clone this repository: git clone https://github.com/dEvasEnApati/pySIGEN.git
+2. Create a new environment: conda create --name pySIGEN python=3.6 numpy pillow
+3. Activate environment: source activate pySIGEN (Linux) or activate pySIGEN (Windows)
+4. Install mono and other dependencies of SIGEN (see https://sites.google.com/site/sigenproject/downloads).
+5. Install SIGEN from https://sites.google.com/site/sigenproject/downloads.
+6. Modify the variables sigenMorphExtractor and sigenSmoothing in
+<pySIGEN repository>/pySIGEN/executables to point to "MorphExtractorCL.exe" and "swcsmoothing.exe" respectively
+7. Install pySIGEN: pip install <path to local pySIGEN repository>
 
 Without Conda, with pip and virtualenvwrapper (only for Linux, Mac):
 
-1. Create a new environment: mkvirtualenv pySIGEN
-2. Activate environment: workon pySIGEN
-3. Install pySIGEN: pip install <path to pySIGEN repository>
-4. Install SIGEN and its dependencies from https://sites.google.com/site/sigenproject/downloads.
-5. Modify the variables sigenMorphExtractor and sigenSmoothing to point to
-"MorphExtractorCL.exe" and "swcsmoothing.exe" respectively
+1. Clone this repository: git clone https://github.com/dEvasEnApati/pySIGEN.git
+2. Create a new environment: mkvirtualenv pySIGEN
+3. Activate environment: workon pySIGEN
+4. Install mono and other dependencies of SIGEN (see https://sites.google.com/site/sigenproject/downloads)
+5. Install SIGEN and its dependencies from https://sites.google.com/site/sigenproject/downloads.
+6. Modify the variables sigenMorphExtractor and sigenSmoothing in
+<pySIGEN repository>/pySIGEN/executables to point to "MorphExtractorCL.exe" and "swcsmoothing.exe" respectively
+7. Install pySIGEN: pip install <path to local pySIGEN repository>
 
 
 See file USAGE on how to use.

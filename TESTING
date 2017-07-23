@@ -1,0 +1,4 @@
+1. Follow all the steps in the file 'INSTALL'.
+2. Activate the virtual environment.
+3. Install nose: conda install nose or pip install nose
+4. Navigate to the root directory of the local repository and run "nosetests -v"
