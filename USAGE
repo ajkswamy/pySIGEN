@@ -1,0 +1,3 @@
+Please see the functions in tests/sigen_test.py.
+The function sigenWrapper_test shows how to use SIGEN.
+The function sigenSmoothing_test shows how to use the smoothing function of SIGEN.
